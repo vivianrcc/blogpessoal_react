@@ -33,7 +33,7 @@ export function AuthProvider({children} :AuthProviderProps){
         setLoading(true)
 
         try{
-            await login9
+            await login
 
         }
 
