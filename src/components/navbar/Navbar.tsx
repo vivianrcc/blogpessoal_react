@@ -1,31 +1,42 @@
+import { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom"
+import { AuthContext } from "../../contexts/AuthContext";
+
 function Navbar() {
+
+    const navigate = useNavigate();
+
+    const { handleLogout } = useContext(AuthContext)
+
+    function logout() {
+
+        handleLogout()
+        alert('O Usuário foi desconectado com sucesso!')
+        navigate('/')
+    }
     return (
         <>
             <div className="w-full flex justify-center py-4 bg-pink-400 text-white">
                 <div className="container flex justify-between items-center text-lg px-4">
-            
+
                     <div className="flex justify-start">
                         <img
                             src="https://media.tenor.com/oz0F49PgUKQAAAAi/mochi-cat.gif"
                             alt="gif de um gato"
-                            className="h-auto max-w-[120px] object-contain" 
+                            className="h-auto max-w-[120px] object-contain"
                         />
                     </div>
-                    
-                    <span className="font-bold flex-grow text-3xl text-left">Blog Pessoal</span>
 
+                    <span className="font-bold flex-grow text-3xl text-left"><Link to='/home' className='hover:underline'>Blog Pessoal</Link></span>
                     {/* Menu de navegação à direita */}
                     <div className="flex gap-8">
-                        <span>Postagens</span>
-                        <span>Temas</span>
-                        <span>Cadastrar tema</span>
+                        <span><Link to='/temas' className='hover:underline'>Temas</Link></span>
                         <span>Perfil</span>
-                        <span>Sair</span>
+                        <span><Link to='' onClick={logout} className='hover:underline'>Sair</Link></span>
                     </div>
                 </div>
             </div>
         </>
     );
 }
-
 export default Navbar;
