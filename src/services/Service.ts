@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://blogpessoal-kkt3.onrender.com',
+  baseURL: 'https://blogpessoal-sgyr.onrender.com',
 });
 
 // Função para cadastrar um usuário

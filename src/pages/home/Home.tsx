@@ -1,3 +1,4 @@
+import ListaPostagens from "../../components/postagens/listapostagens/ListaPostagens"
 
 function Home() {
     return (
@@ -15,7 +16,7 @@ function Home() {
                         <div className="flex justify-around gap-4">
                             <div className='rounded text-purple 
                                             border-purple border-solid border-8 py-6 px-6'
-                                >
+                            >
                                 Nova Postagem
                             </div>
                         </div>
@@ -30,6 +31,8 @@ function Home() {
                     </div>
                 </div>
             </div>
+
+            <ListaPostagens />
         </>
     )
 }

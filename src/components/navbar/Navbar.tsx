@@ -30,7 +30,9 @@ function Navbar() {
                     <span className="font-bold flex-grow text-3xl text-left"><Link to='/home' className='hover:underline'>Blog Pessoal</Link></span>
                     {/* Menu de navegação à direita */}
                     <div className="flex gap-8">
+                        <Link to='/postagens' className='hover:underline'>Postagens</Link>
                         <span><Link to='/temas' className='hover:underline'>Temas</Link></span>
+                        <Link to='/cadastrartema' className='hover:underline'>Cadastrar tema</Link>
                         <span>Perfil</span>
                         <span><Link to='' onClick={logout} className='hover:underline'>Sair</Link></span>
                     </div>
