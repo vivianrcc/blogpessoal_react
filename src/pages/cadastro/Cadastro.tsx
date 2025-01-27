@@ -86,7 +86,7 @@ function Cadastro() {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label htmlFor="usuario">Usuario</label>
+            <label htmlFor="usuario">e-mail do Usuario</label>
             <input
               type="text"
               id="usuario"
@@ -98,7 +98,7 @@ function Cadastro() {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label htmlFor="foto">Foto</label>
+            <label htmlFor="foto">URL da Foto</label>
             <input
               type="text"
               id="foto"
@@ -110,7 +110,7 @@ function Cadastro() {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label htmlFor="senha">Senha</label>
+            <label htmlFor="senha">Senha *deve conter 8 carateres min </label>
             <input
               type="password"
               id="senha"
