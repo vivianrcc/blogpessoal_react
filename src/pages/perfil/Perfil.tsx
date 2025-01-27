@@ -21,11 +21,11 @@ function Perfil() {
 
             <img 
                 className='w-full h-72 object-cover border-b-8 border-white' 
-                src="https://i.imgur.com/ZZFAmzo.jpg" alt="Capa do Perfil" />
+                src="https://media.tenor.com/IFEw7GBOcbYAAAAi/chipchipchipchipexpert-gold.gif" alt="Capa do Perfil" />
 
             <img 
                 className='rounded-full w-56 mx-auto mt-[-8rem] border-8 border-white relative z-10' 
-                src={usuario.foto} alt={`Foto de perfil de ${usuario.nome}`} />
+                src="https://media1.tenor.com/m/gZU3n_9Nv2EAAAAC/cat-cat-stare.gif" alt={`Foto de perfil de ${usuario.nome}`} />
 
             <div 
                 className="relative mt-[-6rem] h-72 flex flex-col 
