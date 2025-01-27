@@ -15,8 +15,8 @@ function Home() {
                         </p>
 
                         <div className="flex justify-around gap-4">
-                            <div className='rounded text-purple 
-                                            border-purple border-solid border-8 py-6 px-6'
+                            <div className='
+                                            border-spacing border-spacing-2 border-8 py-2 px-2'
                             >
                                 <ModalPostagem />
                             </div>  
